@@ -14,7 +14,7 @@ class NavScreenOne extends StatelessWidget {
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
-        backgroundColor: Colors.deepOrange,
+        //backgroundColor: Colors.deepOrange,
         elevation: 0,
       ),
       backgroundColor: Colors.white,
@@ -28,7 +28,7 @@ class NavScreenOne extends StatelessWidget {
             const Text(
               "First Page",
               style: TextStyle(
-                  color: Colors.deepOrange,
+                  //color: Colors.deepOrange,
                   fontWeight: FontWeight.bold,
                   fontSize: 24),
             ),
@@ -38,7 +38,7 @@ class NavScreenOne extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                ElevatedButton(
+               /* ElevatedButton(
                   onPressed: () {
                     Navigator.pop(context);
                   },
@@ -46,7 +46,7 @@ class NavScreenOne extends StatelessWidget {
                       backgroundColor:
                           MaterialStateProperty.all(Colors.deepOrange)),
                   child: const Text("Previous Page"),
-                ),
+                ),*/
                 const SizedBox(
                   width: 15,
                 ),
@@ -57,9 +57,9 @@ class NavScreenOne extends StatelessWidget {
                         MaterialPageRoute(
                             builder: (builder) => const NavScreenTwo()));
                   },
-                  style: ButtonStyle(
-                      backgroundColor:
-                          MaterialStateProperty.all(Colors.deepOrange)),
+                  // style: ButtonStyle(
+                  //     backgroundColor:
+                  //         MaterialStateProperty.all(Colors.deepOrange)),
                   child: const Text("Next Page"),
                 )
               ],

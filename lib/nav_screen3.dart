@@ -13,7 +13,7 @@ class NavScreenThree extends StatelessWidget {
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
-        backgroundColor: Colors.lightGreen,
+        //backgroundColor: Colors.lightGreen,
         elevation: 0,
       ),
       backgroundColor: Colors.white,
@@ -27,7 +27,7 @@ class NavScreenThree extends StatelessWidget {
             const Text(
               "Third Page",
               style: TextStyle(
-                  color: Colors.lightGreen,
+                 // color: Colors.lightGreen,
                   fontWeight: FontWeight.bold,
                   fontSize: 24),
             ),

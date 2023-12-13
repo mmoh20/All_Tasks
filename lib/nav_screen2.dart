@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import 'nav_screen3.dart';
 
 class NavScreenTwo extends StatelessWidget {
   const NavScreenTwo({super.key});
@@ -15,7 +14,7 @@ class NavScreenTwo extends StatelessWidget {
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
-        backgroundColor: Colors.deepPurple,
+        //backgroundColor: Colors.deepPurple,
         elevation: 0,
       ),
       backgroundColor: Colors.white,
@@ -29,7 +28,7 @@ class NavScreenTwo extends StatelessWidget {
             const Text(
               "Second Page",
               style: TextStyle(
-                  color: Colors.deepPurple,
+                  //color: Colors.deepPurple,
                   fontWeight: FontWeight.bold,
                   fontSize: 24),
             ),
@@ -43,26 +42,26 @@ class NavScreenTwo extends StatelessWidget {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  style: ButtonStyle(
-                      backgroundColor:
-                          MaterialStateProperty.all(Colors.deepPurple)),
+                  // style: ButtonStyle(
+                  //     backgroundColor:
+                  //         MaterialStateProperty.all(Colors.deepPurple)),
                   child: const Text("Previous Page"),
                 ),
                 const SizedBox(
                   width: 15,
                 ),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (builder) => const NavScreenThree()));
-                  },
-                  style: ButtonStyle(
-                      backgroundColor:
-                          MaterialStateProperty.all(Colors.deepPurple)),
-                  child: const Text("Next Page"),
-                )
+                // ElevatedButton(
+                //   onPressed: () {
+                //     Navigator.push(
+                //         context,
+                //         MaterialPageRoute(
+                //             builder: (builder) => const NavScreenThree()));
+                //   },
+                //   // style: ButtonStyle(
+                //   //     backgroundColor:
+                //   //         MaterialStateProperty.all(Colors.deepPurple)),
+                //   child: const Text("Next Page"),
+                // )
               ],
             )
           ],

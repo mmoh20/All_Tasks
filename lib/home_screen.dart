@@ -42,13 +42,13 @@ class _HomeScreenState extends State<HomeScreen> {
               style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             centerTitle: true,
-            backgroundColor: Colors.black,
+            //backgroundColor: Colors.black,
             elevation: 0,
           ),
           bottomNavigationBar: BottomNavigationBar(
-            backgroundColor: Colors.black,
-            fixedColor: Colors.white,
-            unselectedItemColor: Colors.white54,
+            //backgroundColor: Colors.black,
+            //fixedColor: Colors.white,
+            //unselectedItemColor: Colors.white54,
             currentIndex: _currentIndex,
             onTap: (int newIndex) {
               setState(() {
@@ -65,17 +65,17 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
           endDrawer: Drawer(
-            backgroundColor: Colors.black,
+            //backgroundColor: Colors.black,
             width: 250,
             child: ListView.separated(
                 itemBuilder: (context, index) {
                   return TextButton(
                     style: TextButton.styleFrom(
                         foregroundColor:
-                            index.isEven ? Colors.white : Colors.blueGrey),
+                            index.isEven ? Colors.green : Colors.black),
                     onPressed: () {},
                     child: Text(
-                      "List Button Number ${index + 1}",
+                      "Test",
                     ),
                   );
                 },
@@ -106,6 +106,21 @@ class _HomeScreenState extends State<HomeScreen> {
                 const SizedBox(
                   height: 20,
                 ),
+                SizedBox(
+                  width: 150,
+                  height: 150,
+                  child: TabBarView(
+                    physics: const NeverScrollableScrollPhysics(),
+                    children: [
+                      Text(
+                        '1',
+                        style: TextStyle(fontSize: 30),
+                      ),
+                      Text('2', style: TextStyle(fontSize: 30)),
+                      Text('3', style: TextStyle(fontSize: 30))
+                    ],
+                  ),
+                ),
                 ElevatedButton(
                   onPressed: () {
                     Navigator.push(
@@ -113,25 +128,12 @@ class _HomeScreenState extends State<HomeScreen> {
                         MaterialPageRoute(
                             builder: (builder) => const NavScreenOne()));
                   },
-                  style: ButtonStyle(
-                      backgroundColor: MaterialStateProperty.all(Colors.black)),
+                  // style: ButtonStyle(
+                  //     backgroundColor: MaterialStateProperty.all(Colors.black)),
                   child: const Text("Next Page"),
                 ),
-                const SizedBox(
-                  height: 30,
-                ),
-                SizedBox(
-                  width: 150,
-                  height: 150,
-                  child: TabBarView(
-                    physics: const NeverScrollableScrollPhysics(),
-                    children: [
-                      Container(color: Colors.deepOrange),
-                      Container(color: Colors.deepPurple),
-                      Container(color: Colors.green),
-                    ],
-                  ),
-                )
+
+
               ],
             ),
           ),
